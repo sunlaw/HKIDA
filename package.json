@@ -1,0 +1,20 @@
+{
+  "name": "hkida",
+  "version": "0.0.1",
+  "description": "A website created by Sun@Studio Sans Limited",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Studio Sans Limited",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "dependencies": {
+    "grunt-sass": "^2.0.0",
+    "node-sass": "^4.5.3"
+  }
+}

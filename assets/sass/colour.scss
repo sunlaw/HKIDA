@@ -1,0 +1,44 @@
+$light-grey : #cccccc; 
+$middle-grey : #666666; 
+$dark-grey : #333333;
+$crimson : #dc143c;
+
+.bg-l-grey{
+	background : $light-grey;
+	color : #FFF
+}
+.bg-m-grey{
+	background : $middle-grey;
+	color : #FFF
+}
+.bg-d-grey{
+	background : $dark-grey;
+	color : #FFF
+}
+.bg-crimson{
+	background : $crimson;
+	color : #FFF
+}
+.bg-white{
+	background : #FFF;
+	color : #333
+}
+.bg-l-grey a,
+.bg-m-grey a,
+.bg-d-grey a,
+.bg-crimson a{
+	color : #FFF
+}
+
+.text-m-grey{
+	color : $middle-grey;
+}
+.text-d-grey{
+	color : $dark-grey;
+}
+.text-black{
+	color : #000
+}
+.text-crimson{
+	color : $crimson 
+}
