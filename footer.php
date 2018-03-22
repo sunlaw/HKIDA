@@ -78,4 +78,8 @@
 		<div class="cols-1"></div>
 	</div>
 </div>
+<!-- End  -->
+<!-- Javascript -->
+<script type="text/javascript" src="./assets/js/global.js"></script>
 <script src="http://hkida.sans.local:35729/livereload.js"></script>
+<!-- End  -->

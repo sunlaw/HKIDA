@@ -19,7 +19,7 @@
 				<div class="page-title mt-4">
 					<h2>Design Jobs</h2>
 				</div>
-				<div class="page-content">
+				<div class="page-content-body">
 					<ul>
 						<li>
 							<p class="text-crimson job-title no-margin">
@@ -100,11 +100,10 @@
 	</div>
 </section>
 <section class="back-to-top cols-1">
-	<a href="">
-		<div class="dice-button trans">
-			<object type="image/svg+xml" data="./assets/svg/arrow-up.svg" class="icon-arrow trans" width="16" height="16">
-			</object>
-		</div>
-		<p class="text-center f-brown">Back to top</p>
-	</a>
+	<div class="dice-button trans">
+		<a href="javascript:;" class="svg">
+			<object type="image/svg+xml" data="./assets/svg/arrow-up.svg" class="icon-arrow trans" width="16" height="16"></object>
+		</a>
+	</div>
+	<p class="text-center f-brown">Back to top</p>
 </section>

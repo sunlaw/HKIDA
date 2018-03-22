@@ -29,7 +29,7 @@
 </section>
 <!-- Statment -->
 <section class="statement">
-	<div class="row pb-5">
+	<div class="row pb-4 pt-4">
 		<div class="cols-1">
 		</div>
 		<div class="cols-5">
@@ -119,8 +119,8 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
 				<p>In reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<h5 class="f-brown d-inline mr-h"><a href="">Visit members directory</a></h5>
-				<h5 class="f-brown d-inline"><a href="">Visit members application</a></h5>
+				<h5 class="f-brown d-inline mr-h"><a href="directory">Visit members directory</a></h5>
+				<h5 class="f-brown d-inline"><a href="register">Visit members application</a></h5>
 			</div>
 		</div>
 		<div class="cols-1">

@@ -21,7 +21,61 @@ body {
 	background: #fff;
 	/* Fallback for when there is no custom background color defined. */
 }
+.vh-center{
+	position: absolute; 
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin: auto auto;
+}
+.v-center{
+	display:flex;
+	align-items:center;
+	height:100%;
+}
+.full-vh{
+	height:100%;
+	width:100%;
+}
+.h-sep{
+	height:1px;
+	width:100%;
+	display:block;
+	clear:both;
+	background-color: $light-grey;
+	margin:4rem 0;
+}
+.divider{
+	display:flex;
+	margin: 3rem 0 0;
+	h4{
+		margin-right:15px;
+	}
+	.line{
+		flex:1;
+		height:1px;
+		border-top: 1px solid $light-grey;
+		margin-top:12px;
+		maegin-left:20px;
+	}
 
+}
+.divider-mid{
+	text-align: center;
+	display:flex;
+	margin: 1rem 0 ;
+	h5{
+		margin-left:16px;
+		margin-right:16px;
+	}
+	.line{
+		flex:1;
+		height:1px;
+		border-top: 1px solid $light-grey;
+		margin-top:10px;
+	}
+}
 .trans{
 	transition : all .4s linear;
 }
@@ -95,6 +149,7 @@ body {
 	margin-right :  calc( 100% / 9 / 2 );
 }
 
+$row-05 : calc( 100vw / 9 * .5);
 $row-1 : calc( 100vw / 9 * 1);
 $row-2 : calc( 100vw / 9 * 2);
 $row-3 : calc( 100vw / 9 * 3);
@@ -105,6 +160,9 @@ $row--2 : calc( 100vw / 9 * -2);
 $row--3 : calc( 100vw / 9 * -3);
 $row--4 : calc( 100vw / 9 * -4);
 
+.row-05{
+	height : $row-05
+}
 .row-1{
 	height : $row-1
 }

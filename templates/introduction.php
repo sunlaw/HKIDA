@@ -19,7 +19,7 @@
 					<li><h4><a href="#">Chairman message</a></h4></li>
 					<li><h4><a href="#">Introduction</a></h4></li>
 					<li><h4><a href="#">Aims</a></h4></li>
-					<li><h4><a href="#">Exco</a></h4></li>
+					<li><h4><a href="exco">Exco</a></h4></li>
 					<li><h4><a href="#">Code</a></h4></li>
 					<li><h4><a href="#">Definition</a></h4></li>
 				</ul>
@@ -31,7 +31,7 @@
 				<div class="page-title mt-4">
 					<h2>Introduction</h2>
 				</div>
-				<div class="page-content">
+				<div class="page-content-body">
 					<p><strong>HONG KONG INTERIOR DESIGN ASSOCIATION (HKIDA)</strong> is a non-governmental and non-profit organisation founded in 1991. We are interior design professionals consists of designers, contractors, suppliers and other related bodies in interior architecture.</p>
 					<p>HKIDA is committed to serve the needs of practitioners, students, industry partners and the general public. HKIDA’s major undertaking is to foster professionalism and <span style="color: #dc143c">design excellence</span>. We develop codes of conduct, advocates creativity, technical innovation and craftsmanship. HKIDA actively engages in research and education; initiates regional competitions, and carries out activities at community level.</p>
 					<blockquote>Our success relies on support and recognition from the industry. HKIDA works closely with various professional associations, academics, commercials and public sectors to further realize our goals.
@@ -55,11 +55,10 @@
 	</div>
 </section>
 <section class="back-to-top cols-1">
-	<a href="">
 	<div class="dice-button trans">
-		<object type="image/svg+xml" data="./assets/svg/arrow-up.svg" class="icon-arrow trans" width="16" height="16">
-			</object>
+		<a href="javascript:;" class="svg">
+			<object type="image/svg+xml" data="./assets/svg/arrow-up.svg" class="icon-arrow trans" width="16" height="16"></object>
+		</a>
 	</div>
 	<p class="text-center f-brown">Back to top</p>
-	</a>
 </section>

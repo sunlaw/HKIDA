@@ -1,3 +1,4 @@
+$lite-grey : #f2f2f2; 
 $light-grey : #cccccc; 
 $middle-grey : #666666; 
 $dark-grey : #333333;
@@ -31,14 +32,14 @@ $crimson : #dc143c;
 }
 
 .text-m-grey{
-	color : $middle-grey;
+	color : $middle-grey!important;
 }
 .text-d-grey{
 	color : $dark-grey;
 }
 .text-black{
-	color : #000
+	color : #000!important;
 }
 .text-crimson{
-	color : $crimson 
+	color : $crimson!important;
 }
