@@ -1,6 +1,17 @@
 <!-- Data -->
 <?php 
-    $thumbnailArray = array("LD17910_P-300x225.jpg","LD20379_P-300x225.jpg","LD22654_P-300x225.jpg","LD22960_P-300x225.jpg","LD23584_P-300x225.jpg");
+	 $newsArray = array(
+        array("date" => '02.03.2017','title'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit'),
+        array("date" => '02.03.2017','title'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit'),
+        array("date" => '02.03.2017','title'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit'),
+        array("date" => '02.03.2017','title'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit'),
+        array("date" => '02.03.2017','title'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit'),
+        array("date" => '02.03.2017','title'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit'),
+        array("date" => '02.03.2017','title'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit'),
+        array("date" => '02.03.2017','title'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit'),
+        array("date" => '02.03.2017','title'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit'),
+    );
+    $thumbnailArray = array("news-1.jpg","news-2.jpg","news-3.jpg");
 
 ?>
 <!-- End -->
@@ -27,34 +38,40 @@
 			<div class="content-body">
 				<div class="news-list">
 					<ul class="loop-news">
-						<?php $i=0; foreach ($partnerArray as $key => $partner):?>
-						<li class="item narrow">
-							<div class="thumbnail">
-								<?php $rand = rand(0,4); ?>
-								<a href="single-supplier">
-									<img src="<?php echo './images/'.$thumbnailArray[$rand] ?>">
+						<?php $i=0; foreach ($newsArray as $key => $news):?>
+						<li class="item ">
+							<div class="img-placeholder">
+								<a href="">
+									<?php $rand = rand(0,2); ?>
+									<img src="./images/news/<?php echo $thumbnailArray[$rand]; ?>"/>
 								</a>
 							</div>
-							<div class="d-flex">
-								<?php if($partner['logo']): ?>
-								<div>
-									<img class="logo" src="<?php echo $partner['logo']; ?>">
-								</div>
-								<?php endif; ?>
-								<div>
-									<h5 class="f-brown text-crimson"><?php echo $partner['category']; ?></h5>
-									<p><?php echo $partner['name']; ?></p>
-								</div>
+							<div class="content-placeholder">
+								<h5 class="f-brown text-crimson"><?php echo $news['date']; ?></h5>
+								<p class="text-black"><?php echo $news['title']; ?></p>
 							</div>
 						</li>
 						<?php $i++; endforeach; ?>
 					</ul>
 				</div>
+				<div class="text-center">
+					<div class="page-pagin d-inline text-m-grey">
+						<span class="label">Page</span>
+						<span class="qa"><a href="">«</a></span>
+						<span class="qa"><a href="">prev</a></span>
+						<span class="active"><a href="">1</a></span> 
+						<span><a href="">2</a></span>
+						<span><a href="">3</a></span>
+						<span><a href="">4</a></span>
+						<span><a href="">5</a></span>
+						<span class="qa"><a href="">next</a></span>
+						<span class="qa"><a href="">»</a></span>
+					</div>
+				</div>
 			</div>
 			<!-- End here -->
 		</div>
 		<div class="cols-1">
-			<div class="row-05 bg-crimson"></div>
 		</div>
 	</div>
 </section>

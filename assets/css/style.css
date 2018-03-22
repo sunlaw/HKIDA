@@ -1392,7 +1392,8 @@ Global
   height: calc( 100vw / 9 * 1);
   background: #dc143c;
   text-align: center;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative; }
   .dice-button a {
     width: 100%;
     height: 100%; }
@@ -1402,7 +1403,36 @@ Global
   .dice-button:hover {
     background: #cccccc; }
     .dice-button:hover .icon-arrow {
-      margin-top: 5px; }
+      margin-top: 5px;
+      transition: all 500ms; }
+  .dice-button .line {
+    position: absolute;
+    height: 1px;
+    width: 30%;
+    background: #FFF;
+    transition: all 500ms; }
+  .dice-button.left .line {
+    top: 50%;
+    left: 35%; }
+  .dice-button.left .icon-arrow {
+    transform: translateX(-18px); }
+  .dice-button.left:hover .line {
+    width: 40%;
+    transform: translateX(-10px); }
+  .dice-button.left:hover .icon-arrow {
+    margin-top: 0;
+    transform: translateX(-30px); }
+  .dice-button.right .line {
+    top: 49.5%;
+    right: 35%; }
+  .dice-button.right .icon-arrow {
+    transform: translateX(18px); }
+  .dice-button.right:hover .line {
+    width: 40%;
+    transform: translateX(10px); }
+  .dice-button.right:hover .icon-arrow {
+    margin-top: 0;
+    transform: translateX(30px); }
 
 .back-to-top {
   position: fixed;
@@ -1481,6 +1511,10 @@ Global
       padding: 0 .7rem; }
       .page-pagin span a:hover {
         color: #000; }
+  .page-pagin.text-m-grey span a {
+    color: #666666; }
+  .page-pagin.text-m-grey span.active a {
+    color: #000; }
 
 .input-wrapper,
 .filter-wrapper {
@@ -1715,7 +1749,32 @@ Landing
 .landing-slider .quick-search-container {
   min-height: calc( 100vw / 9 * 2);
   background: #FFF;
-  margin-top: calc( 100vw / 9 * -1); }
+  margin-top: calc( 100vw / 9 * -1);
+  z-index: 2; }
+  .landing-slider .quick-search-container form {
+    margin-left: calc( 100vw / 9 * 1);
+    margin-right: 40px;
+    border-bottom: 1px solid #dc143c;
+    border-left: 1px solid #dc143c;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 2.5rem; }
+    .landing-slider .quick-search-container form h5 {
+      color: #000;
+      margin: .5rem 0 .5rem 1rem; }
+    .landing-slider .quick-search-container form input[type="text"] {
+      background: none;
+      border: 0;
+      font-family: "Brown", sans-serif; }
+      .landing-slider .quick-search-container form input[type="text"]::-webkit-input-placeholder {
+        color: #000; }
+      .landing-slider .quick-search-container form input[type="text"]:-moz-placeholder {
+        color: #000; }
+      .landing-slider .quick-search-container form input[type="text"]::-moz-placeholder {
+        color: #000;
+        opacity: 1; }
+      .landing-slider .quick-search-container form input[type="text"]:-ms-input-placeholder {
+        color: #000; }
 
 .news-carousel .carousel-container {
   width: 100%;
@@ -1727,7 +1786,20 @@ Landing
     position: relative; }
     .news-carousel .carousel-container .item .img-placeholder {
       width: 70%;
-      background: #222; }
+      background: #222;
+      overflow: hidden;
+      position: relative; }
+      .news-carousel .carousel-container .item .img-placeholder img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto auto;
+        height: 100%;
+        width: auto;
+        opacity: .35;
+        transition: all 500ms; }
       .news-carousel .carousel-container .item .img-placeholder a {
         width: 100%;
         height: 100%;
@@ -1736,11 +1808,14 @@ Landing
         content: '';
         display: block;
         padding-top: 160%; }
+      .news-carousel .carousel-container .item .img-placeholder:hover img {
+        transform: scale(1.1); }
     .news-carousel .carousel-container .item .content-placeholder {
       position: absolute;
       bottom: calc( 100vw / 9 * 1 / 2);
       left: calc( 100vw / 9 * 1 / 3); }
       .news-carousel .carousel-container .item .content-placeholder p {
+        padding-right: 2rem;
         margin-bottom: 0; }
 
 .pagin-controler .dice-button.left,
@@ -1954,6 +2029,58 @@ Job List
     width: 75%; }
 
 /*--------------------------------------------------------------
+News
+--------------------------------------------------------------*/
+.what-is-on .page-title {
+  height: 100%; }
+  .what-is-on .page-title h2 {
+    margin-bottom: 0; }
+
+.news-list .loop-news {
+  width: 100%;
+  overflow: hidden; }
+  .news-list .loop-news .item {
+    width: calc( 78% / 3);
+    float: left;
+    margin-right: 11%;
+    margin-bottom: 3rem;
+    position: relative; }
+    .news-list .loop-news .item:nth-child(3n) {
+      margin-right: 0; }
+    .news-list .loop-news .item .img-placeholder {
+      width: 100%;
+      background: #222;
+      overflow: hidden;
+      position: relative; }
+      .news-list .loop-news .item .img-placeholder img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto auto;
+        height: 100%;
+        width: auto;
+        opacity: .5;
+        transition: all 500ms; }
+      .news-list .loop-news .item .img-placeholder a {
+        width: 100%;
+        height: 100%;
+        display: block; }
+      .news-list .loop-news .item .img-placeholder:after {
+        content: '';
+        display: block;
+        padding-top: 160%; }
+      .news-list .loop-news .item .img-placeholder:hover img {
+        transform: scale(1.1); }
+    .news-list .loop-news .item .content-placeholder {
+      margin-top: 1.2rem; }
+      .news-list .loop-news .item .content-placeholder h5 {
+        margin-bottom: 0; }
+      .news-list .loop-news .item .content-placeholder p {
+        margin-bottom: 0; }
+
+/*--------------------------------------------------------------
 Plugin
 --------------------------------------------------------------*/
 .gallery-containner {
@@ -1984,7 +2111,7 @@ Plugin
 
 .swiper-container {
   width: 100%;
-  height: 70vh;
+  height: calc( 100vw / 9 * 4);
   z-index: 1; }
 
 .swiper-wrapper .swiper-slide {

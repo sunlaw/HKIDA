@@ -20,11 +20,12 @@ License: GNU General Public License v2 or later
 Global
 --------------------------------------------------------------*/
 .dice-button{
-	width : $row-1;
-	height : $row-1;
-	background : $crimson;
-	text-align : center;
-	cursor : pointer;
+	width: $row-1;
+	height: $row-1;
+	background: $crimson;
+	text-align: center;
+	cursor: pointer;
+	position:relative;
 		a{
 			width:100%;
 			height:100%;
@@ -37,6 +38,52 @@ Global
 			background : $light-grey;
 			.icon-arrow{
 				margin-top : 5px;
+				transition: all 500ms ;
+			}
+		}
+		.line{
+			position:absolute;
+			height:1px;
+			width:30%;
+			background:#FFF;
+			transition: all 500ms ;
+		}
+		&.left{
+			.line{
+				top:50%;
+				left:35%;
+			}
+			.icon-arrow{
+				transform: translateX(-18px);
+			}
+			&:hover{
+				.line{
+					width:40%;
+					transform: translateX(-10px);
+				}
+				.icon-arrow{
+					margin-top : 0;
+					transform: translateX(-30px);
+				}
+			}
+		}
+		&.right{
+			.line{
+				top:49.5%;
+				right:35%;
+			}
+			.icon-arrow{
+				transform: translateX(18px);
+			}
+			&:hover{
+				.line{
+					width:40%;
+					transform: translateX(+10px);
+				}
+				.icon-arrow{
+					margin-top : 0;
+					transform: translateX(+30px);
+				}
 			}
 		}
 }
@@ -131,6 +178,20 @@ Global
 				color : #000;	
 			}
 		}
+	}
+	&.text-m-grey{
+		span{
+			a{
+				color : $middle-grey;
+			}
+			&.active{
+				a{
+					color : #000
+				}
+			
+			}
+		}
+
 	}
 	
 }
@@ -402,6 +463,37 @@ Landing
 		min-height : $row-2;
 		background : #FFF;
 		margin-top : $row--1 ;
+		z-index:2;
+		form{
+			margin-left:$row-1;
+			margin-right:40px;
+			border-bottom:1px solid $crimson;
+			border-left:1px solid $crimson;
+			display:flex;
+			margin-top:2.5rem;
+			h5{
+				color:#000;
+				margin:.5rem 0 .5rem 1rem;
+			}
+			input[type="text"]{
+				background:none;
+				border:0;
+				font-family: "Brown", sans-serif;
+				&::-webkit-input-placeholder {
+					color: #000;
+				}
+				&:-moz-placeholder {
+					color: #000;
+				}
+				&::-moz-placeholder {
+					color: #000;
+					opacity: 1;
+				}
+				&:-ms-input-placeholder {
+					color: #000;
+				}
+			}
+		}
 	}
 }
 .news-carousel{
@@ -415,7 +507,21 @@ Landing
 			position : relative;
 			.img-placeholder{
 				width:70%;
-				background :#222;
+				background:#222;
+				overflow:hidden;
+				position:relative;
+				img{
+					position: absolute;
+					left:0;
+					right:0;
+					top:0;
+					bottom:0;
+					margin:auto auto;
+					height:100%;
+					width:auto;
+					opacity:.35;
+					transition:all 500ms;
+				}
 				a{
 					width : 100%;
 					height : 100%;
@@ -426,12 +532,18 @@ Landing
 					display : block;
 					padding-top : 160%;
 				}
+				&:hover{
+					img{
+						transform:scale(1.1);
+					}
+				}
 			}
 			.content-placeholder{
 				position : absolute;
 				bottom: calc( 100vw / 9 * 1 / 2);
 				left :  calc( 100vw / 9 * 1 / 3);
 				p{
+					padding-right:2rem;
 					margin-bottom : 0;
 				}
 			}
@@ -701,6 +813,76 @@ Job List
 	}
 }
 /*--------------------------------------------------------------
+News
+--------------------------------------------------------------*/
+.what-is-on{
+	.page-title{
+		height:100%;
+		h2{
+			margin-bottom:0;
+		}
+	}
+}
+.news-list{
+	.loop-news{
+		width :100%;
+		overflow: hidden;
+		.item{
+			width: calc( 78% / 3 );
+			float : left;
+			margin-right: 11%;
+			margin-bottom:3rem;
+			position : relative;
+			&:nth-child(3n){
+				margin-right: 0;
+			}
+			.img-placeholder{
+				width:100%;
+				background:#222;
+				overflow:hidden;
+				position:relative;
+				img{
+					position: absolute;
+					left:0;
+					right:0;
+					top:0;
+					bottom:0;
+					margin:auto auto;
+					height:100%;
+					width:auto;
+					opacity:.5;
+					transition:all 500ms;
+				}
+				a{
+					width : 100%;
+					height : 100%;
+					display: block;
+				}
+				&:after{
+					content : '';
+					display : block;
+					padding-top : 160%;
+				}
+				&:hover{
+					img{
+						transform:scale(1.1);
+					}
+				}
+			}
+			.content-placeholder{
+				margin-top:1.2rem;
+				h5{
+					margin-bottom : 0;
+				}
+				p{
+					margin-bottom : 0;
+				}
+			}
+		}
+	}
+
+}
+/*--------------------------------------------------------------
 Plugin
 --------------------------------------------------------------*/
 .gallery-containner{
@@ -737,7 +919,7 @@ Plugin
 }
 .swiper-container {
       width: 100%;
-      height: 70vh; 
+      height: calc( 100vw / 9 * 4);
       z-index: 1
 }
 .swiper-wrapper .swiper-slide{
