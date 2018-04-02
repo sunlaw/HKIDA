@@ -15,15 +15,44 @@
 ?>
 <body class="bg-l-grey">
 	<header>
-        <nav id="main-nav" role="main-nav">
+        <nav class="mobile-nav">
+            <div class="row f-brown">
+                <div class="cols-6 bg-l-grey logo-container">
+                     <a href="/"><img class="site-logo" src="./assets/images/IDA_logo_en.png" /></a>
+                </div>
+                <div class="cols-3 bg-crimson hunberger">
+                    <div class="v-center">
+                         <div class="hunberger-menu" aria-controls="main-nav" aria-expanded="false">
+                            <div class="line-menu start"></div>
+                            <div class="line-menu mid"></div>
+                            <div class="line-menu end"></div>
+                             <div class="text-center label">Menu</div>
+                         </div>
+                     </div>
+                </div>
+            </div>
+        </nav>
+        <nav id="main-nav" class="main-nav" role="main-nav">
     		<div class="row f-brown store-1">
-                <div class="cols-3 bg-l-grey logo-container">
+                <div class="cols-3 bg-l-grey logo-container d-none d-md-block">
                     <a href="/"><img class="site-logo" src="./assets/images/IDA_logo_en.png" /></a>
                 </div>
                 <div class="cols-1 bg-crimson">
                 	<div class="v-center">
                 		<a href="introduction">About HKIDA</a>
+                            <!-- second level menu -->
+                            <ul class="menu-secondary">
+                                <li><h4><a href="introduction">Introduction</a></h4></li>
+                                <li><h4><a href="#">Chairman message</a></h4></li>
+                                <li><h4><a href="#">Introduction</a></h4></li>
+                                <li><h4><a href="#">Aims</a></h4></li>
+                                <li><h4><a href="exco">Exco</a></h4></li>
+                                <li><h4><a href="#">Code</a></h4></li>
+                                <li><h4><a href="#">Definition</a></h4></li>
+                            </ul>
+                            <!-- end -->
                 	</div>
+                  
                 </div>
                 <div class="cols-1 bg-crimson">
                 	<div class="v-center">
@@ -33,6 +62,16 @@
                 <div class="cols-1 bg-crimson">
                 	<div class="v-center">
                     	<a href="people">Our People</a>
+                         <!-- second level menu -->
+                        <ul class="menu-secondary">
+                            <li><h4><a href="people">Become our member</a></h4></li>
+                            <li><h4><a href="#">Classification of Membership</a></h4></li>
+                            <li><h4><a href="#">Member subscriptions</a></h4></li>
+                            <li><h4><a href="#">Member registration</a></h4></li>
+                            <li><h4><a href="#">Member login</a></h4></li>
+                            <li><h4><a href="#">Members directory</a></h4></li>
+                        </ul>
+                         <!-- end -->
                     </div>
                 </div>
                 <div class="cols-1 bg-crimson">
@@ -45,7 +84,7 @@
                     	<a href="contact-us">Get in touch</a>
                     </div>
                 </div>
-                 <div class="cols-1 bg-crimson hunberger">
+                 <div class="cols-1 bg-crimson hunberger d-none d-lg-block">
                  	<div class="v-center">
 	                    <div class="hunberger-menu" aria-controls="main-nav" aria-expanded="false">
 							<div class="line-menu start"></div>
@@ -58,7 +97,7 @@
                 </div>
             </div>
             <div class="row f-brown store-2">
-                <div class="cols-3 bg-l-grey logo-container">
+                <div class="cols-3 bg-l-grey logo-container d-none d-md-block">
                 </div>
                 <div class="cols-1 bg-crimson">
                 	<div class="">
@@ -67,7 +106,7 @@
                 </div>
                 <div class="cols-1 bg-crimson">
                 	<div class="">
-                    	<a href="opportunities">Opportunities</a>
+                    	<a href="opportunities">Job board</a>
                     </div>
                 </div>
                 <div class="cols-1 bg-crimson">

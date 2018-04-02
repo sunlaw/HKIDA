@@ -37,7 +37,8 @@
 			<div class="content-body">
 				<div class="filter-wrapper">
 					<div class="filter-menu">
-						<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort by Category</button>
+						<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span class="d-none d-lg-block">Sort </span>by Category</button>
 						<div class="dropdown-menu dropdown-menu-down" aria-labelledby="dropdownMenuButton">
 							<a class="dropdown-item" href="#">Surfaces</a>
 							<a class="dropdown-item" href="#">Structure</a>
@@ -46,15 +47,17 @@
 						 </div>
 					</div>
 					<div class="filter-menu">
-						<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort by Trending</button>
+						<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span class="d-none d-lg-block">Sort </span>by Trending</button>
 						<div class="dropdown-menu dropdown-menu-down" aria-labelledby="dropdownMenuButton">
-							<a class="dropdown-item" href="#">Most recently published</a>
+							<a class="dropdown-item" href="#">Most recent</a>
 							<a class="dropdown-item" href="#">Most viewed</a>
 							<a class="dropdown-item" href="#">Most recommended</a>
 						 </div>
 					</div>
 					<div class="filter-menu">
-						<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort by Price range</button>
+						<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span class="d-none d-lg-block">Sort </span>by Price range</button>
 						<div class="dropdown-menu dropdown-menu-down" aria-labelledby="dropdownMenuButton">
 							<a class="dropdown-item" href="#">Luxury</a>
 							<a class="dropdown-item" href="#">Moderate</a>
@@ -135,32 +138,32 @@
 						<h5><b>Featured Supplier</b></h5>
 						<div class="line"></div>
 					</div>
-					<div class="featured-list">
-						<ul class="loop-supplier">
-							<?php $i=0; foreach ($partnerArray as $key => $partner):?>
-							<li class="item narrow">
-								<div class="thumbnail">
-									<?php $rand = rand(0,4); ?>
-									<a href="single-supplier">
-										<img src="<?php echo './images/'.$thumbnailArray[$rand] ?>">
-									</a>
+				</div>
+				<div class="featured-list">
+					<ul class="loop-supplier">
+						<?php $i=0; foreach ($partnerArray as $key => $partner):?>
+						<li class="item narrow">
+							<div class="thumbnail">
+								<?php $rand = rand(0,4); ?>
+								<a href="single-supplier">
+									<img src="<?php echo './images/'.$thumbnailArray[$rand] ?>">
+								</a>
+							</div>
+							<div class="d-flex">
+								<?php if($partner['logo']): ?>
+								<div>
+									<img class="logo" src="<?php echo $partner['logo']; ?>">
 								</div>
-								<div class="d-flex">
-									<?php if($partner['logo']): ?>
-									<div>
-										<img class="logo" src="<?php echo $partner['logo']; ?>">
-									</div>
-									<?php endif; ?>
-									<div>
-										<h5 class="f-brown text-crimson"><?php echo $partner['category']; ?></h5>
-										<p><?php echo $partner['name']; ?></p>
-									</div>
+								<?php endif; ?>
+								<div>
+									<h5 class="f-brown text-crimson"><?php echo $partner['category']; ?></h5>
+									<p><?php echo $partner['name']; ?></p>
 								</div>
-								<?php if($i == 2){break;} ?>
-							</li>
-							<?php $i++; endforeach; ?>
-						</ul>
-					</div>
+							</div>
+							<?php if($i == 2){break;} ?>
+						</li>
+						<?php $i++; endforeach; ?>
+					</ul>
 				</div>
 			</div>
 		</div>

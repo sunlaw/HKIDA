@@ -4,6 +4,20 @@
 		<div class="cols-8">
 			<div class="banner-container">
 				<h1>About HKIDA</h1>
+				<!-- overlay line -->
+				<div class="overlap-line">
+					<div class="row">
+						<div class="cols-1"></div>
+						<div class="cols-1"></div>
+						<div class="cols-1"></div>
+						<div class="cols-1"></div>
+						<div class="cols-1"></div>
+						<div class="cols-1"></div>
+						<div class="cols-1"></div>
+						<div class="cols-1"></div>
+					</div>
+				</div>
+				<!-- end -->
 			</div>
 		</div>
 		<div class="cols-1 bg-crimson row-1">
@@ -16,6 +30,7 @@
 			<section class="sitebar bg-crimson">
 				<h5 class="f-brown text-black">About HKIDA</h5>
 				<ul>
+					<li><h4><a href="#">Introduction</a></h4></li>
 					<li><h4><a href="#">Chairman message</a></h4></li>
 					<li><h4><a href="#">Introduction</a></h4></li>
 					<li><h4><a href="#">Aims</a></h4></li>

@@ -26,8 +26,9 @@ a.t-white:active{
 
 a.button{
 	color: $crimson;
+	width:100%;
 	border: 1px solid $crimson;
-	margin: 2rem auto;
+	margin: .5rem auto;
 	padding: 15px 25px 13px;
 	font-family: 'Brown', Helvetica, sans-serif;
 	font-weight: 700;
@@ -36,9 +37,6 @@ a.button{
 	&:hover{
 		background : $crimson;
 		color : #FFF!important;
-	}
-	+ a.button{
-		margin-left:10px
 	}
 	&.with-arrow{
 		padding-right:42px;
@@ -71,6 +69,29 @@ a.button.inverse{
 	}
 }
 
+a.forget-password{
+	display:block;
+	margin-top:1rem;
+}
+
+@media (min-width: 768px) {  
+	a.button{
+		width: auto;
+		margin: 1rem auto;
+		+ a.button{
+			margin-left:10px
+		}
+	}
+	a.forget-password{
+		display:inline-block;
+		margin-left:1rem;
+	}
+}
+@media (min-width: 992px) { 
+	a.button{
+		margin: 2rem auto;
+	}
+}
 /* Hover effects */
 
 .entry-content a,

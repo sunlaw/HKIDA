@@ -91,9 +91,9 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur.</p> 
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur.</p>
 						</div>
-						<div class="d-flex">
-							<div class="g-recaptcha" style="flex:1" data-sitekey="6LdhN04UAAAAAHtgcmpirkL_gex2bP6R5CyTBYLc"></div>
-							<div class="text-center" style="flex:1">
+						<div class="recaptcha">
+							<div class="g-recaptcha" data-sitekey="6LdhN04UAAAAAHtgcmpirkL_gex2bP6R5CyTBYLc"></div>
+							<div class="text-center">
 									<button type="submit" form="form" value="Submit" style="margin:auto; ">Submit</button>
 							</div>
 						</div>

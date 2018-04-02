@@ -4,6 +4,20 @@
 		<div class="cols-8">
 			<div class="banner-container">
 				<h1>Opportunities</h1>
+				<!-- overlay line -->
+				<div class="overlap-line">
+					<div class="row">
+						<div class="cols-1"></div>
+						<div class="cols-1"></div>
+						<div class="cols-1"></div>
+						<div class="cols-1"></div>
+						<div class="cols-1"></div>
+						<div class="cols-1"></div>
+						<div class="cols-1"></div>
+						<div class="cols-1"></div>
+					</div>
+				</div>
+				<!-- end -->
 			</div>
 		</div>
 		<div class="cols-1 bg-crimson row-1">

@@ -1,7 +1,16 @@
 (function( $ ) {
+	var isMobile = function(){
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+			return true;
+		}else{
+			return false;
+		}
+	}
 	var nav = function(){
 		var menu = $('.hunberger-menu');
-		var mainNav = $('#main-nav');
+		var mainNav = $('.main-nav');
+		var mobileNav = $('.mobile-nav');
+		var secNav = $('.menu-secondary');
 
 		menu.click(function(){
 			if(menu.attr('aria-expanded') == 'false'){
@@ -13,6 +22,27 @@
 			}
 			
 		})
+		var secNavClick = function(_target){
+			var _this = _target;
+
+			$('.second-trigger').removeClass('active');
+			secNav.attr('aria-expanded','false');
+
+			_this.addClass('active');
+			_this.parent().find(secNav).attr('aria-expanded','true');
+
+		}
+		if(isMobile()== true){
+			secNav.each(function(){
+				$(this).parent().find("a").eq(0).addClass('second-trigger');
+			});
+			$('.second-trigger').bind('click',function(){
+				secNavClick($(this));
+				return false;
+			})
+		}
+		
+
 	}
 	var back_to_top = function(){
 		var backToTop = $('.back-to-top');

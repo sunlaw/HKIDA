@@ -42,7 +42,8 @@
 			<div class="content-body">
 				<div class="filter-wrapper">
 					<div class="filter-menu">
-						<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort by Category</button>
+						<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span class="d-none d-lg-block">Sort </span>by Category</button>
 						<div class="dropdown-menu dropdown-menu-down" aria-labelledby="dropdownMenuButton">
 							<a class="dropdown-item" href="#">Surfaces</a>
 							<a class="dropdown-item" href="#">Structure</a>
@@ -51,15 +52,17 @@
 						 </div>
 					</div>
 					<div class="filter-menu">
-						<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort by Trending</button>
+						<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span class="d-none d-lg-block">Sort </span>by Trending</button>
 						<div class="dropdown-menu dropdown-menu-down" aria-labelledby="dropdownMenuButton">
-							<a class="dropdown-item" href="#">Most recently published</a>
+							<a class="dropdown-item" href="#">Most recent</a>
 							<a class="dropdown-item" href="#">Most viewed</a>
 							<a class="dropdown-item" href="#">Most recommended</a>
 						 </div>
 					</div>
 					<div class="filter-menu">
-						<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort by Price range</button>
+						<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span class="d-none d-lg-block">Sort </span>by Price range</button>
 						<div class="dropdown-menu dropdown-menu-down" aria-labelledby="dropdownMenuButton">
 							<a class="dropdown-item" href="#">Luxury</a>
 							<a class="dropdown-item" href="#">Moderate</a>

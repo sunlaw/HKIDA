@@ -80,7 +80,7 @@
 					<div class="row loop-header">
 						<div class="f-brown col-4"><b>Name</b></div>
 						<div class="f-brown col-6"><b>Company</b></div>
-						<div class="f-brown col-2"><b>Website</b></div>
+						<div class="f-brown col-2"><b>Web</b></div>
 					</div>
 					<ul class="loop-member">
 						<?php $i=0; foreach ($memberArray as $key => $member):?>

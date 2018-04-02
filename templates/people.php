@@ -4,6 +4,20 @@
 		<div class="cols-8">
 			<div class="banner-container">
 				<h1>Our People</h1>
+				<!-- overlay line -->
+				<div class="overlap-line">
+					<div class="row">
+						<div class="cols-1"></div>
+						<div class="cols-1"></div>
+						<div class="cols-1"></div>
+						<div class="cols-1"></div>
+						<div class="cols-1"></div>
+						<div class="cols-1"></div>
+						<div class="cols-1"></div>
+						<div class="cols-1"></div>
+					</div>
+				</div>
+				<!-- end -->
 			</div>
 		</div>
 		<div class="cols-1 bg-crimson row-1">
@@ -48,7 +62,7 @@
 						<label>Password</label>
 						<input id="title" type="text" name="title">
 						<button type="submit" form="form" value="Submit">Login</button>
-						<a href="" class="text-m-grey ml-4">Forgotten password?</a>
+						<a href="" class="text-m-grey forget-password">Forgotten password?</a>
 					</form>
 				</div>
 			</section>

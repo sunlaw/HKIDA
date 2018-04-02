@@ -132,15 +132,15 @@ h6:first-child {
 }
 
 h1 {
-	font-size: 46px;
-	font-size: 2.875rem;
+	font-size: 32px;
+	font-size: 2rem;
 	font-weight: 700;
 	font-family: 'Brown', Helvetica, sans-serif;
 }
 
 h2{
-	font-size: 38px;
-	font-size: 2.375rem;
+	font-size: 24px;
+	font-size: 1.5rem;
 	font-weight: 700;
 	font-family: 'Brown', Helvetica, sans-serif;
 }
@@ -178,6 +178,29 @@ p {
 p.no-margin{
 	margin : 0;
 }
+
+@media (min-width: 992px) {  
+	h1 {
+		font-size: 46px;
+		font-size: 2.875rem;
+	}
+
+	h2{
+		font-size: 38px;
+		font-size: 2.375rem;
+	}
+
+	h3 {
+		font-size: 28px;
+		font-size: 1.75rem;
+	}
+
+	h4 {
+		font-size: 20px;
+		font-size: 1.375rem;
+	}
+}
+
 .f-brown{
 	font-family: 'Brown', Helvetica, sans-serif;
 }
@@ -261,6 +284,8 @@ blockquote:after {
 :focus {
 	outline: none;
 }
+
+
 
 /* Typography for Arabic Font */
 

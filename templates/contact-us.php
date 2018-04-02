@@ -4,6 +4,20 @@
 		<div class="cols-8">
 			<div class="banner-container">
 				<h1>Contact us</h1>
+				<!-- overlay line -->
+				<div class="overlap-line">
+					<div class="row">
+						<div class="cols-1"></div>
+						<div class="cols-1"></div>
+						<div class="cols-1"></div>
+						<div class="cols-1"></div>
+						<div class="cols-1"></div>
+						<div class="cols-1"></div>
+						<div class="cols-1"></div>
+						<div class="cols-1"></div>
+					</div>
+				</div>
+				<!-- end -->
 			</div>
 		</div>
 		<div class="cols-1 bg-crimson row-1">
@@ -49,9 +63,9 @@
 						<input id="title" type="text" name="title" placeholder="">
 						<label>Message</label>
 						<textarea rows="4" cols="50"></textarea>
-						<div class="d-flex mt-4">
-							<div class="g-recaptcha" style="flex:1" data-sitekey="6LdhN04UAAAAAHtgcmpirkL_gex2bP6R5CyTBYLc"></div>
-							<div class="text-center" style="flex:1">
+						<div class="recaptcha mt-4">
+							<div class="g-recaptcha" style="" data-sitekey="6LdhN04UAAAAAHtgcmpirkL_gex2bP6R5CyTBYLc"></div>
+							<div class="text-center" style="">
 									<button type="submit" form="form" value="Submit" style="margin:auto; ">Submit</button>
 							</div>
 						</div>

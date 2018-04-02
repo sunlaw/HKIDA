@@ -85,6 +85,7 @@ input[type="checkbox"] + label {
 button,
 input[type="button"],
 input[type="submit"] {
+	width:100%;
 	background-color: $crimson;
 	font-family: "Brown", sans-seft;
 	border: 0;
@@ -134,6 +135,13 @@ input[type="reset"].secondary:focus,
 input[type="submit"].secondary:hover,
 input[type="submit"].secondary:focus {
 	background: #bbb;
+}
+@media (min-width: 768px) {  
+	button,
+	input[type="button"],
+	input[type="submit"] {
+		width:auto;
+	}
 }
 
 /* Placeholder text color -- selectors need to be separate to work. */

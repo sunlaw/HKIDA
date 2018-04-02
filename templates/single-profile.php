@@ -147,14 +147,14 @@
 		</div>
 	</div>
 	<div class="row ">
-		<div class="cols-2 row-1">
+		<div class="cols-2 row-1 d-none d-md-block">
 		</div>
 		<div class="cols-5 row-1">
 			<div class="text-center">
 				<a href="directory" class="button inverse">Back to Members directory</a>
 			</div>
 		</div>
-		<div class="cols-2 row-1">
+		<div class="cols-2 row-1 d-none d-md-block">
 		</div>
 	</div>
 </section>

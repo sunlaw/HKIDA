@@ -64,38 +64,62 @@
 		<div class="cols-1">
 		</div>
 		<div class="cols-8 news-carousel">
-			<div class="carousel-container">
-				<div class="item">
-					<div class="img-placeholder">
-						<a href="">
-							<img src="./images/news/news-1.jpg"/>
-						</a>
+			<div class="swiper-container carousel-container">
+				<div class="swiper-wrapper">
+					<div class="item swiper-slide">
+						<div class="img-placeholder">
+							<a href="">
+								<img src="./images/news/news-1.jpg"/>
+							</a>
+						</div>
+						<div class="content-placeholder">
+							<p class="f-brown">02.03.2017</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</div>
 					</div>
-					<div class="content-placeholder">
-						<p class="f-brown">02.03.2017</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+					<div class="item swiper-slide">
+						<div class="img-placeholder">
+							<a href="">
+								<img src="./images/news/news-2.jpg"/>
+							</a>
+						</div>
+						<div class="content-placeholder">
+							<p class="f-brown">02.03.2017</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</div>
 					</div>
-				</div>
-				<div class="item">
-					<div class="img-placeholder">
-						<a href="">
-							<img src="./images/news/news-2.jpg"/>
-						</a>
+					<div class="item swiper-slide">
+						<div class="img-placeholder">
+							<a href="">
+								<img src="./images/news/news-3.jpg"/>
+							</a>
+						</div>
+						<div class="content-placeholder">
+							<p class="f-brown">02.03.2017</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</div>
 					</div>
-					<div class="content-placeholder">
-						<p class="f-brown">02.03.2017</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+					<div class="item swiper-slide">
+						<div class="img-placeholder">
+							<a href="">
+								<img src="./images/news/news-2.jpg"/>
+							</a>
+						</div>
+						<div class="content-placeholder">
+							<p class="f-brown">02.03.2017</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</div>
 					</div>
-				</div>
-				<div class="item">
-					<div class="img-placeholder">
-						<a href="">
-							<img src="./images/news/news-3.jpg"/>
-						</a>
-					</div>
-					<div class="content-placeholder">
-						<p class="f-brown">02.03.2017</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+					<div class="item swiper-slide">
+						<div class="img-placeholder">
+							<a href="">
+								<img src="./images/news/news-3.jpg"/>
+							</a>
+						</div>
+						<div class="content-placeholder">
+							<p class="f-brown">02.03.2017</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</div>
 					</div>
 				</div>
 			</div>
