@@ -32,7 +32,6 @@
 				<ul>
 					<li><h4><a href="#">Introduction</a></h4></li>
 					<li><h4><a href="#">Chairman message</a></h4></li>
-					<li><h4><a href="#">Introduction</a></h4></li>
 					<li><h4><a href="#">Aims</a></h4></li>
 					<li><h4><a href="exco">Exco</a></h4></li>
 					<li><h4><a href="#">Code</a></h4></li>
