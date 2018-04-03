@@ -59,7 +59,7 @@
 					<h3 style="text-align: center;">4.</h3>
 					<h5>To bring together all the skilled people involved with creating an interior environment in order to benefit both business and the consumer.</h5>
 					<div class="text-center">
-						<a href="#" class="button">Visit members directory</a>
+						<a href="directory" class="button">Visit members directory</a>
 					</div>
 				</div>
 			</section>
