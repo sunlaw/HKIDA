@@ -56,6 +56,27 @@
 	$( document ).ready( function() {
 		var Nav = new nav();
 		var backToTop = new back_to_top();
+		if(isMobile()==false){
+			//Back to Top Button Adjustment
+			var backToTopBtn = $('.back-to-top');
+			var hitTheButtom = "";
+			var scroll = "";
+
+			$( window ).scroll(function() {
+				if(backToTopBtn){
+					scroll = $(document).scrollTop()
+				 	hitTheButtom = $('.newsletter').offset().top - $('.newsletter').height() - $('.sitemap').height();
+				 	console.log(scroll);
+				 	console.log(hitTheButtom);
+					if(scroll > hitTheButtom){
+						backToTopBtn.addClass('fixed');
+					}else{
+						backToTopBtn.removeClass('fixed');
+					}
+				}
+			});
+			// End;
+		}
 	});
 
 })( jQuery );

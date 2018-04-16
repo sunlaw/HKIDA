@@ -1,6 +1,7 @@
 (function( $ ) {
 	var gallery = function(){
 		var gallery = $('.gallery-wrapper');
+
 		var galleryChildren = gallery.children();
 		var childLength = gallery.children().length;
 		var zidx = childLength+1;
@@ -8,8 +9,8 @@
 		var loader = $('.loader-containner');
 
 		var init = function(){
-			setInterval(() => {
-			  	interval();
+			setInterval(function(){
+		 		interval();
 			}, 4000)
 		}
 		var interval = function(){

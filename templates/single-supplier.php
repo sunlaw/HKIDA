@@ -100,13 +100,13 @@
 						</div>
 						<div class="supplier-contact col-sm-4">
 							<h5 class="f-brown pb-4">Contact</h5>
-							<span class="text-crimson">Astisans Flooring  (HK) Ltd.</span></br>
-							216A, InnoCentre, 72 Tat Chee Avenue, </br>
-							Kowloon Tong</br>
-							Tel. (852) 2866 2039</br>
-							Fax: (852) 2866 3261</br>
-							Email :  <a href="mailto:admin@hkida.org" class="text-crimson">admin@hkida.org</a></br>
-							Website :  <a href="www.artisanflooring.com" class="text-crimson">www.artisanflooring.com</a></br>
+							<span class="text-crimson">Astisans Flooring  (HK) Ltd.</span><br/>
+							216A, InnoCentre, 72 Tat Chee Avenue, <br/>
+							Kowloon Tong<br/>
+							Tel. (852) 2866 2039<br/>
+							Fax: (852) 2866 3261<br/>
+							Email :  <a href="mailto:admin@hkida.org" class="text-crimson">admin@hkida.org</a><br/>
+							Website :  <a href="www.artisanflooring.com" class="text-crimson">www.artisanflooring.com</a><br/>
 					</div>
 				</dir>
 			</div>
