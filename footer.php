@@ -54,7 +54,7 @@
 			</div>
 			<div class="cols-2 d-none d-md-block">
 				<h4><a href="#" class="text-black">APIDA</a></h4>
-				<h4><a href="#" class="text-black">PIDA project</a></h4>
+				<h4><a href="#" class="text-black">RIDA project</a></h4>
 				<h4><a href="#" class="text-crimson">Get in touch</a></h4>
 			</div>
 			<div class="cols-2 block-union">

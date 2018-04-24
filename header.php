@@ -115,7 +115,7 @@
                 </div>
                 <div class="cols-1 bg-crimson">
                 	<div class="">
-                    	<a href="#" target="_new" class="text-black">PIDA project</a>
+                    	<a href="#" target="_new" class="text-black">RIDA project</a>
                     </div>
                 </div>
                 <div class="cols-1 bg-crimson">

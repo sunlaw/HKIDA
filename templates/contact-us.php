@@ -42,15 +42,6 @@
 						Email :  <a href="mailto:admin@hkida.org" class="text-crimson">admin@hkida.org</a></br>
 						Website :  <a href="www.hkida.org" class="text-crimson">www.hkida.org</a></br>
 					</p>
-					<p class="f-brown">
-						<b>Supporting Organisation of</br>Hong Kong Trade Development Council</b></br>
-						<img src="./assets/images/tdctrade.jpg" style="width: 200px;" class="mt-2">
-					</p>
-					<p></p>
-					<p class="f-brown">
-						<b>Member of International Federation of</br>Interior Architects/Interior Designers (IFI)</b></br>
-						<img src="./assets/images/footer-ifi-logo-white.jpg" style="width: 300px" class="mt-2">
-					</p>
 				</div>
 				<div class="h-sep"></div>
 				<div class="page-title mt-4">

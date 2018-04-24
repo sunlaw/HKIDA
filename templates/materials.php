@@ -4,11 +4,17 @@
         array("name" => 'Allen Yau','category'=>'Surfaces','logo'=>'./images/lobo-b.png','thumbnail'=>''),
         array("name" => 'Mokum','category'=>'Lighting','logo'=>'./images/logo-upgrade.png','thumbnail'=>''),
         array("name" => 'Seneca Textiles','category'=>'Outdoor','logo'=>'./images/logo-mg.png','thumbnail'=>''),
-        array("name" => 'Artisan Flooring','category'=>'Lighting and outdoor','logo'=>'','thumbnail'=>''),
-        array("name" => 'Mokum','category'=>'Surface','logo'=>'','thumbnail'=>''),
-        array("name" => 'Seneca Textiles','category'=>'Outdoor','logo'=>'','thumbnail'=>''),
+        array("name" => 'Artisan Flooring','category'=>'Lighting and outdoor','logo'=>'','thumbnail'=>'')
     );
     $categoryArray = array(
+        array("category" => 'Surfaces','subcategory'=>'Flooring, walls and stone','thumbnail'=>'./images/cate-surfaces.jpg'),
+        array("category" => 'Structure','subcategory'=>'Doors, stairs, windows and ceiling','thumbnail'=>'./images/cate-structure.jpg'),
+        array("category" => 'Lighting','subcategory'=>'Domestic appliances, lamps and chandeliers ','thumbnail'=>'./images/cate-lighting.jpg'),
+        array("category" => 'Outdoor','subcategory'=>'Conservatories, garden and outdoor furniture ','thumbnail'=>'./images/cate-outdoor.jpg'),
+        array("category" => 'Surfaces','subcategory'=>'Flooring, walls and stone','thumbnail'=>'./images/cate-surfaces.jpg'),
+        array("category" => 'Structure','subcategory'=>'Doors, stairs, windows and ceiling','thumbnail'=>'./images/cate-structure.jpg'),
+        array("category" => 'Lighting','subcategory'=>'Domestic appliances, lamps and chandeliers ','thumbnail'=>'./images/cate-lighting.jpg'),
+        array("category" => 'Outdoor','subcategory'=>'Conservatories, garden and outdoor furniture ','thumbnail'=>'./images/cate-outdoor.jpg'),
         array("category" => 'Surfaces','subcategory'=>'Flooring, walls and stone','thumbnail'=>'./images/cate-surfaces.jpg'),
         array("category" => 'Structure','subcategory'=>'Doors, stairs, windows and ceiling','thumbnail'=>'./images/cate-structure.jpg'),
         array("category" => 'Lighting','subcategory'=>'Domestic appliances, lamps and chandeliers ','thumbnail'=>'./images/cate-lighting.jpg'),
@@ -49,6 +55,14 @@
 							<a class="dropdown-item" href="#">Structure</a>
 							<a class="dropdown-item" href="#">Lighting</a>
 							<a class="dropdown-item" href="#">Outdoor</a>
+							<a class="dropdown-item" href="#">Surfaces</a>
+							<a class="dropdown-item" href="#">Structure</a>
+							<a class="dropdown-item" href="#">Lighting</a>
+							<a class="dropdown-item" href="#">Outdoor</a>
+							<a class="dropdown-item" href="#">Surfaces</a>
+							<a class="dropdown-item" href="#">Structure</a>
+							<a class="dropdown-item" href="#">Lighting</a>
+							<a class="dropdown-item" href="#">Outdoor</a>
 						 </div>
 					</div>
 					<div class="filter-menu">
@@ -57,16 +71,15 @@
 						<div class="dropdown-menu dropdown-menu-down" aria-labelledby="dropdownMenuButton">
 							<a class="dropdown-item" href="#">Most recent</a>
 							<a class="dropdown-item" href="#">Most viewed</a>
-							<a class="dropdown-item" href="#">Most recommended</a>
 						 </div>
 					</div>
 					<div class="filter-menu">
 						<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<span class="d-none d-lg-block">Sort </span>by Price range</button>
+							<span class="d-none d-lg-block">Sort </span>by TBC</button>
 						<div class="dropdown-menu dropdown-menu-down" aria-labelledby="dropdownMenuButton">
-							<a class="dropdown-item" href="#">Luxury</a>
-							<a class="dropdown-item" href="#">Moderate</a>
-							<a class="dropdown-item" href="#">Affordable</a>
+							<a class="dropdown-item" href="#">TBC</a>
+							<a class="dropdown-item" href="#">TBC</a>
+							<a class="dropdown-item" href="#">TBC</a>
 						 </div>
 					</div>
 					<div class="mini-search">
@@ -81,7 +94,7 @@
 				<div class="featured-list">
 					<ul class="loop-supplier">
 						<?php $i=0; foreach ($partnerArray as $key => $partner):?>
-						<li class="item narrow">
+						<li class="item wide">
 							<div class="thumbnail">
 								<?php $rand = rand(0,4); ?>
 								<a href="single-supplier">
@@ -95,7 +108,6 @@
 								</div>
 								<?php endif; ?>
 								<div>
-									<h5 class="f-brown text-crimson"><?php echo $partner['category']; ?></h5>
 									<p><?php echo $partner['name']; ?></p>
 								</div>
 							</div>
@@ -111,7 +123,7 @@
 				<div class="category-list">
 					<ul class="loop-category row">
 						<?php $i=0; foreach ($categoryArray as $key => $category):?>
-						<li class="col-sm-6 item">
+						<li class="col-sm-4 item">
 							<div class="thumbnail">
 								<a href="category">
 									<img src="<?php echo $category['thumbnail']; ?>">
